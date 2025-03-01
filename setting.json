@@ -1,0 +1,144 @@
+{
+    "workbench.colorTheme": "GitHub Dark",
+    //"editor.fontFamily": "'Cascadia', '宋体'",
+    //"debug.console.fontFamily": "'Cascadia', '宋体'",
+    //"terminal.integrated.fontFamily": "'CaskaydiaCove Nerd Font Light','宋体'",
+    "editor.fontSize": 14,
+    //"terminal.integrated.fontSize": 16,
+
+    "editor.codeLensFontFamily":"JetBrains Mono, MesloLGS Nerd Font, MesloLGS NF, 等距更纱黑体 SC",
+    "editor.fontFamily":"JetBrains Mono, MesloLGS Nerd Font, MesloLGS NF, 等距更纱黑体 SC",
+    "debug.console.fontFamily": "JetBrains Mono, MesloLGS Nerd Font, MesloLGS NF, 等距更纱黑体 SC",
+    "debug.console.fontSize": 14,
+    "terminal.integrated.fontFamily": "JetBrains Mono, MesloLGS Nerd Font, MesloLGS NF, 等距更纱黑体 SC",
+    "terminal.integrated.fontSize": 14,
+    "editor.bracketPairColorization.enabled": true,
+    "editor.bracketPairColorization.independentColorPoolPerBracketType": false,
+
+    "editor.lineHeight": 1.6,
+    "editor.fontLigatures": true,
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 1000,
+    "workbench.iconTheme": "vscode-icons",
+
+    "window.commandCenter": true,
+    "window.titleBarStyle": "custom",
+    "window.menuBarVisibility": "toggle",
+
+    "better-comments.tags": [
+        {
+            //表示有未完成的代码
+            "tag": "TODO",
+            "color": "#fa973a",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            //表示代码需要修正
+            "tag": "FIXME",
+            "color": "#ff0000",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            //提示
+            "tag": "HINT",
+            "color": "#2faf64",
+            "strikethrough": true,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            //描述代码作用
+            "tag": "NOTE",
+            "color": "#00b714",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            //表示之后可能会出现问题
+            "tag": "HACK",
+            "color": "#fa973a",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            //表示这里有问题
+            "tag": "BUG",
+            "color": "#ff0000",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+    ],
+
+    //error lens
+    "workbench.colorCustomizations": {
+        "errorLens.errorForeground":"#ff0000",//BUG FIXME
+        "errorLens.warningForeground": "#fa973a",//HACK TODO
+        "errorLens.infoForeground":"#00b7e4",//NOTE
+        "errorLens.hintForeground":"#2faf64"//HINT
+    },
+
+    //code runner
+    "code-runner.saveAllFilesBeforeRun": true,
+    "code-runner.runInTerminal": true,
+    "code-runner.executorMap": {
+        "c": "cd $dir && gcc $fileName -o bin\\$fileNameWithoutExt && cd bin && .\\$dir$fileNameWithoutExt",
+        "cpp": "cd $dir && g++ $fileName -o bin\\$fileNameWithoutExt && cd bin && .\\$dir$fileNameWithoutExt",
+    },
+
+    //gitlens
+    "gitlens.defaultDateFormat": "YYYY-MM-DD hh:mm:ss",
+    "gitlens.defaultDateShortFormat": "YYYY-MM-DD",
+
+    //cppreference
+    "cppref.lang": "zh",//语言选择中文,英语用en
+    "cppref.searchEngine": "Google",
+
+    //c/c++
+    "C_Cpp.default.cppStandard": "c++17",
+    "C_Cpp.default.cStandard": "c17",
+    "C_Cpp.inlayHints.autoDeclarationTypes.enabled": true,
+    "C_Cpp.inlayHints.parameterNames.suppressWhenArgumentContainsName": false,
+    "C_Cpp.inlayHints.parameterNames.hideLeadingUnderscores": false,
+    "C_Cpp.inlayHints.referenceOperator.enabled": true,
+    "C_Cpp.inlayHints.referenceOperator.showSpace": true,
+    "C_Cpp.clang_format_path": "/usr/bin/clang-format",
+    "C_Cpp.clang_format_style": "Google",
+
+    //doxygen documentation generator
+    "doxdocgen.generic.authorName": "Haibabara",
+    "doxdocgen.generic.authorEmail": "you@domain.com",
+    "doxdocgen.file.copyrightTag": [
+        "@copyright Copyright (c) {year} Haibabara"
+    ],
+
+    //makefile
+    "makefile.makePath": "/usr/bin/make",
+    "makefile.configureOnOpen": false,
+    "makefile.configureOnEdit": false,
+
+    //cmake
+    //"cmake.cmakePath": "/usr/bin/cmake",
+    "cmake.buildDirectory": "${workspaceFolder}/out/${buildType}",
+    "cmake.configureOnOpen": false,
+    "cmake.configureOnEdit": false,
+    "cmake.generator": "Unix Makefiles"
+}
