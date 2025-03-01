@@ -1,0 +1,10 @@
+工具:wsl/mingw
+    cmake
+
+界面插件:better-comments
+        error lens
+        code runner
+        gitlens
+        cppreference
+        Color Highlight
+        vscode-icons
